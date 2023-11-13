@@ -1,5 +1,7 @@
 import "./App.css";
+import Button from "./components/Button";
 import Heading from "./components/Heading";
+import Input from "./components/Input";
 import Layout from "./components/Layout";
 import Sayhello from "./components/Sayhello";
 import Status from "./components/Status";
@@ -34,6 +36,8 @@ function App() {
       <Layout>
         <Heading>This is Heading</Heading>
       </Layout>
+      <Button handleClick={(e,id) => console.log(e.target,id)}/>
+      <Input value="" handleChange={(e) => console.log(e.target.value)}/>
       <Status status="loading" />
       <Sayhello arrData={arrData} objData={objData} isLoggedIn={true} />
     </>
