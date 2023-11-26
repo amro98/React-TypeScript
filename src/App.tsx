@@ -7,6 +7,9 @@ import Sayhello from "./components/Sayhello";
 import Status from "./components/Status";
 import Container from "./components/Container";
 import Products from "./components/Products";
+import Loggedin from "./components/Loggedin";
+import User from "./components/User";
+import Counter from "./components/Counter";
 
 
 function App() {
@@ -72,6 +75,12 @@ function App() {
       <Container styles={{border:"1px solid black", padding:"1rem"}} />
       <hr style={{margin:"1rem"}}/>
       <Products productsData={productsData} />
+      <hr style={{margin:"1rem"}}/>
+      <Loggedin/>
+      <hr style={{margin:"1rem"}}/>
+      <User/>
+      <hr style={{margin:"1rem"}}/>
+      <Counter/>
     </>
   );
 }
